@@ -51,18 +51,18 @@ export default function Footer() {
           <nav>
             <ul className="flex flex-row gap-8 items-center">
               {[
-                { label: "בית", onClick: () => navigate("/wsdigital/home") },
+                { label: "בית", onClick: () => navigate("/home") },
                 {
                   label: "עלינו",
-                  onClick: () => navigate("/wsdigital/aboutus"),
+                  onClick: () => navigate("/aboutus"),
                 },
                 {
                   label: "קטלוג",
-                  onClick: () => navigate("/wsdigital/catalog"),
+                  onClick: () => navigate("/catalog"),
                 },
                 {
                   label: "מחירים",
-                  onClick: () => navigate("/wsdigital/pricing"),
+                  onClick: () => navigate("/pricing"),
                 },
                 {
                   label: "נגישות",

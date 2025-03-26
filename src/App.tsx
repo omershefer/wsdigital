@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Suspense } from "react";
 import { init } from "@emailjs/browser";
 import "./App.css";
@@ -12,11 +12,10 @@ import Contactpage from "./pages/ContactPage";
 import WorkExamples from "./pages/WorkExamples";
 
 function App() {
-  const urlBase = "/wsdigital";
   init("Osm30QnSHmceSTNsD");
 
   return (
-    <BrowserRouter basename={urlBase}>
+    <HashRouter>
       <div className="w-full h-full">
         <ScrollToTopOnRouteChange />
         <Suspense fallback={<div>Loading...</div>}>
@@ -35,7 +34,7 @@ function App() {
           </Routes>
         </Suspense>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
