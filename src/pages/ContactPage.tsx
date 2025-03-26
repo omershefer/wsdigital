@@ -4,6 +4,13 @@ import Footer from "../components/general/Footer";
 function ContactPage() {
   return (
     <div className="min-w-full min-h-screen overflow-y-auto overflow-x-hidden bg-blue-50 flex flex-1 flex-col items-center font-primary">
+      <title>ויצמן-שפר דיגיטל- צור קשר </title>
+      <meta
+        name="description"
+        content="צרו קשר בקליק וקבלו הצעת מחיר מותאמת אישית"
+      />
+
+      <link rel="canonical" href="/wsdigital/contact" />
       <div>
         <header>
           <Header />
@@ -16,7 +23,6 @@ function ContactPage() {
           </div>
         </main>
       </div>
-
       <div>
         <footer>
           <Footer />

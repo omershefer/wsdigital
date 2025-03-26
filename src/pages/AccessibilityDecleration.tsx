@@ -4,6 +4,13 @@ import Footer from "../components/general/Footer";
 function AccessibilityDecleration() {
   return (
     <div className="min-w-full min-h-screen overflow-y-auto overflow-x-hidden bg-blue-50 flex flex-1 flex-col items-center font-primary">
+      <title>ויצמן-שפר דיגיטל- הצהרת נגישות</title>
+      <meta
+        name="description"
+        content="הצהרת נגישות"
+      />
+
+      <link rel="canonical" href="/wsdigital/accessibility" />
       <div>
         <header>
           <Header />

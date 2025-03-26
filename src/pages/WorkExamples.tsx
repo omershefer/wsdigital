@@ -4,6 +4,13 @@ import Footer from "../components/general/Footer";
 function WorkExamplesPage() {
   return (
     <div className="min-w-full min-h-screen overflow-y-auto overflow-x-hidden bg-blue-50 flex flex-1 flex-col items-center font-primary">
+      <title>ויצמן-שפר דיגיטל- העבודות שלנו</title>
+      <meta
+        name="description"
+        content="דני קגנוביץ׳- אימונים ותזונה, הדבשת-עגלת קפה במדבר ועוד"
+      />
+
+      <link rel="canonical" href="/wsdigital/catalog" />
       <div>
         <header>
           <Header />

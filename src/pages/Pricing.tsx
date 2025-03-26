@@ -4,6 +4,13 @@ import Footer from "../components/general/Footer";
 function PricingPage() {
   return (
     <div className="min-w-full min-h-screen overflow-y-auto overflow-x-hidden bg-blue-50 flex flex-1 flex-col items-center font-primary">
+      <title>ויצמן-שפר דיגיטל- מחירים</title>
+      <meta
+        name="description"
+        content="דף נחיתה-1400-2000 ש״ח. אתר תדמית- 2500-3000 ש״ח. כולל עיצוב ואחזקה בחודש הראשון."
+      />
+
+      <link rel="canonical" href="/wsdigital/pricing" />
       <div>
         <header>
           <Header />

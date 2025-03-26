@@ -19,6 +19,9 @@ export default function Home() {
 
   return (
     <div className="min-w-full min-h-screen overflow-y-auto overflow-x-hidden bg-blue-50 flex flex-1 flex-col items-center font-primary">
+      <title>שפר-ויצמן דיגיטל</title>
+      <meta name="description" content="ויצמן-שפר דיגיטל- בונים אתרים שיעיפו לכם את העסק קדימה" />
+      <link rel="canonical" href="/wsdigital/home" />
       <div>
         <header>
           <Header />
