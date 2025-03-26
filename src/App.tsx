@@ -16,6 +16,7 @@ import Contactpage from "./pages/ContactPage";
 import WorkExamples from "./pages/WorkExamples";
 
 function App() {
+  const urlBase = "/wsdigital"
   init("Osm30QnSHmceSTNsD");
   return (
     <BrowserRouter>
@@ -23,18 +24,27 @@ function App() {
         <ScrollToTopOnRouteChange />
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/" element={<Navigate to="/home" replace />} />
-
-            <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/contact" element={<Contactpage />} />
+            <Route path={`${urlBase}/home`} element={<Home />} />
+            <Route
+              path={`${urlBase}`}
+              element={<Navigate to={`${urlBase}/home`} replace />}
+            />
+            <Route
+              path={`${urlBase}/`}
+              element={<Navigate to={`${urlBase}/home`} replace />}
+            />
+            <Route
+              path={`/`}
+              element={<Navigate to={`${urlBase}/home`} replace />}
+            />
+            <Route path={`${urlBase}/aboutus`} element={<AboutUs />} />
+            <Route path={`${urlBase}/contact`} element={<Contactpage />} />
             <Route
               path="/accessibility"
               element={<AccessibilityDecleration />}
             />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/catalog" element={<WorkExamples />} />
-
+            <Route path={`${urlBase}/pricing`} element={<Pricing />} />
+            <Route path={`${urlBase}/catalog`} element={<WorkExamples />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Suspense>

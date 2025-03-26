@@ -6,10 +6,10 @@ export default function Header() {
   const navigate = useNavigate();
 
   const navItems = [
-    { label: "בית", onClick: () => navigate("/") },
-    { label: "עלינו", onClick: () => navigate("/aboutus") },
-    { label: "עבודות", onClick: () => navigate("/catalog") },
-    { label: "מחירים", onClick: () => navigate("/pricing") },
+    { label: "בית", onClick: () => navigate("/wsdigital") },
+    { label: "עלינו", onClick: () => navigate("/wsdigital/aboutus") },
+    { label: "עבודות", onClick: () => navigate("/wsdigital/catalog") },
+    { label: "מחירים", onClick: () => navigate("/wsdigital/pricing") },
   ];
 
   return (

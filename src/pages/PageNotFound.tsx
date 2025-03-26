@@ -20,7 +20,7 @@ function PageNotFound() {
             <p>העמוד שאתה מחפש לא קיים או שמיקומו שונה.</p>
 
             <button
-              onClick={() => navigate("/home")}
+              onClick={() => navigate("/wsdigital/home")}
               className="bg-black text-white px-3 py-1 rounded mt-10 active:bg-white active:text-black hover:scale-110 transition active:duration-74 ease-in-out"
             >
               לדף הבית

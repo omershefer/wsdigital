@@ -51,10 +51,19 @@ export default function Footer() {
           <nav>
             <ul className="flex flex-row gap-8 items-center">
               {[
-                { label: "בית", onClick: () => navigate("/home") },
-                { label: "עלינו", onClick: () => navigate("/aboutus") },
-                { label: "קטלוג", onClick: () => navigate("/catalog") },
-                { label: "מחירים", onClick: () => navigate("/pricing") },
+                { label: "בית", onClick: () => navigate("/wsdigital/home") },
+                {
+                  label: "עלינו",
+                  onClick: () => navigate("/wsdigital/aboutus"),
+                },
+                {
+                  label: "קטלוג",
+                  onClick: () => navigate("/wsdigital/catalog"),
+                },
+                {
+                  label: "מחירים",
+                  onClick: () => navigate("/wsdigital/pricing"),
+                },
                 {
                   label: "נגישות",
                   onClick: () => navigate("/accessibility"),
@@ -83,8 +92,7 @@ export default function Footer() {
                   className={`transition-all duration-300 active:opacity-75 flex flex-row items-center gap-x-1 hover:scale-130`}
                 >
                   <a href={item.href} className="h-full w-full">
-
-                  <img src={item.whiteIcon} alt="" className="h-3" />
+                    <img src={item.whiteIcon} alt="" className="h-3" />
                   </a>
                 </li>
               ))}
