@@ -5,22 +5,24 @@ import Carousel from "../components/homepage/Carousel";
 import LogoCloudPc from "../components/homepage/LogoCloudPc";
 import LogoCloudMobile from "../components/homepage/LogoCloudMobile";
 import ContactForm from "@/components/homepage/ContactForm";
-import deviceMockups from "../images/devices-fixed.png"
+import deviceMockups from "../images/devices-fixed.png";
 
 import { useEffect, useState } from "react";
 
 export default function Home() {
-
   const [isMobile, setIsMobile] = useState<boolean>();
 
   useEffect(() => {
-    setIsMobile(window.innerWidth <= 768)
-  }, [])
+    setIsMobile(window.innerWidth <= 768);
+  }, []);
 
   return (
     <div className="min-w-full min-h-screen overflow-y-auto overflow-x-hidden bg-blue-50 flex flex-1 flex-col items-center font-primary">
       <title>שפר-ויצמן דיגיטל</title>
-      <meta name="description" content="ויצמן-שפר דיגיטל- בונים אתרים שיעיפו לכם את העסק קדימה" />
+      <meta
+        name="description"
+        content="ויצמן-שפר דיגיטל- בונים אתרים שיעיפו לכם את העסק קדימה"
+      />
       <link rel="canonical" href="/wsdigital/home" />
       <div>
         <header>
