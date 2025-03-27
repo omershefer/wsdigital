@@ -37,7 +37,7 @@ function AboutUs() {
             <img
               src={firstPicSrc}
               alt="תמונה של עומר שפר ויהב ויצמן"
-              className="col-start-7 col-end-11"
+              className="col-start-7 col-end-11 row-start-1 row-end-6 lg:w-[80%] self-center mr-auto ml-auto"
             />
             <div className="col-start-1 col-span-6 row-start-6 row-span-5">
               <div className="py-5 pr-6 w-full h-full flex flex-col bg-[#d3ebfb] rounded-4xl drop-shadow-[20px_20px_22.2px_rgba(0,0,0,0.2)] backdrop-blur-[50px] transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
@@ -64,7 +64,9 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="col-start-7 col-end-11 row-start-6 row-end-11 rounded-4xl h-full w-full bg-black text-center text-white text-3xl flex items-center justify-center">עוד תמונה</div>
+            <div className="col-start-7 col-end-11 row-start-6 row-end-11 rounded-4xl h-full w-full bg-black text-center text-white text-3xl flex items-center justify-center">
+              עוד תמונה
+            </div>
           </div>
         </main>
       </div>
