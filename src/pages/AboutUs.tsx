@@ -42,7 +42,7 @@ function AboutUs() {
             <div className="col-start-1 col-span-6 row-start-6 row-span-5">
               <div className="py-5 pr-6 w-full h-full flex flex-col bg-[#d3ebfb] rounded-4xl drop-shadow-[20px_20px_22.2px_rgba(0,0,0,0.2)] backdrop-blur-[50px] transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
                 <h1 className="text-4xl mb-3">הסיפור שלנו</h1>
-                <div className="flex flex-col lg:flex-row">
+                <div className="flex flex-col lg:flex-row h-full">
                   <p className="self-start w-full lg:w-[78%] text-lg">
                     {`החיבור בינינו היה מיידי, ומהרגע הראשון הבנו שאנחנו לא סתם עוד שני נערים בני 18- החברות הטובה שלנו בנוסף ליכולת לשתף פעולה בצורה יוצאת דופן, הובילו אותנו לפתוח את ויצמן-שפר דיגיטל, מקום עם נקודת מבט חדשה על התחום מתוך חוויה של גדילה לצד הרשת, והבנה עמוקה של הציפיות והדרישות של הגולשים כיום.
 כל אלו מבטיחים הצלחה ועמידה בציפיות בין אם בארגון לוגיסטי של אירוע הנצחה חברתי או סמינר ל500 בני נוער מכל רחבי הארץ, או בפיתוח אתר התדמית/דף הנחיתה הבא שלכם.
@@ -57,7 +57,7 @@ function AboutUs() {
                   </p>
                   <a
                     onClick={() => navigate("/contact")}
-                    className="bg-black text-white rounded-md py-2 ml-5 self-end min-w-40 max-w-70 text-center active:text-black active:bg-white drop-shadow-[20px_20px_22.2px_rgba(0,0,0,0.2)]"
+                    className="bg-black text-white rounded-md py-3 ml-5 self-end mt-auto w-[30%] text-center active:text-black active:bg-white drop-shadow-[20px_20px_22.2px_rgba(0,0,0,0.2)]"
                   >
                     צור קשר
                   </a>
