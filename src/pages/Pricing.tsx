@@ -11,7 +11,7 @@ function PricingPage() {
       />
 
       <link rel="canonical" href="/wsdigital/pricing" />
-      <div>
+      <div className="w-full">
         <header>
           <Header />
         </header>
@@ -24,7 +24,7 @@ function PricingPage() {
         </main>
       </div>
 
-      <div>
+      <div className="w-full">
         <footer>
           <Footer />
         </footer>

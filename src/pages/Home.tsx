@@ -17,21 +17,21 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-w-full min-h-screen overflow-y-auto overflow-x-hidden bg-blue-50 flex flex-1 flex-col items-center font-primary">
+    <div className="min-w-full min-h-screen overflow-y-auto overflow-x-hidden bg-blue-50 flex flex-1 flex-col items-center justify-center font-primary">
       <title>שפר-ויצמן דיגיטל</title>
       <meta
         name="description"
         content="ויצמן-שפר דיגיטל- בונים אתרים שיעיפו לכם את העסק קדימה"
       />
       <link rel="canonical" href="/wsdigital/home" />
-      <div>
+      <div className="w-full">
         <header>
           <Header />
         </header>
       </div>
-      <div>
-        <main className="w-[100vw] mx-2 flex flex-col items-center my-5">
-          <div className="bg-[#214f36] p-3 lg:w-[98vw] rounded-t-xl flex flex-col items-center">
+      <div className="w-full">
+        <main className="w-full flex mx-auto flex-col items-center my-5">
+          <div className="bg-[#214f36] p-3 lg:w-[98%] rounded-t-xl flex flex-col items-center">
             <h1 className="text-6xl mt-1 mx-2 lg:mx-0 lg:mt-14 lg:mb-10 text-white">
               פתרונות מודרניים לבעיות מודרניות.
             </h1>
@@ -48,17 +48,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-1 flex-col bg-[#2C3537] pt-3 px-3 pb-10 w-full lg:w-[98vw] min-h-[50vh]">
-            <h2 className="text-white text-3xl my-5">העבודות שלנו</h2>
-            <div
-              className="flex flex-row w-full flex-1 justify-center mr-auto ml-auto items-center max-w-[80%] lg:max-w-[95%] "
-              dir="ltr"
-            >
+          <div className="flex flex-1 flex-col bg-[#2C3537] pt-3 px-3 pb-10 w-full lg:w-[98%] min-h-[50%]">
+            <h2 className="text-white text-3xl">העבודות שלנו</h2>
+            <div className="flex justify-center mx-auto w-[75%]" dir="ltr">
               <Carousel />
             </div>
           </div>
           {/*our partners section */}
-          <div className="bg-slate-900 p-3 w-full lg:w-[98vw] h-[65vh] rounded-b-xl flex flex-col items-center drop-shadow-[3.55px_3.55px_22.2px_rgba(0,0,0,0.2)] backdrop-blur-[9px]">
+          <div className="bg-slate-900 p-3 w-full lg:w-[98%] h-[65vh] rounded-b-xl flex flex-col items-center drop-shadow-[3.55px_3.55px_22.2px_rgba(0,0,0,0.2)] backdrop-blur-[9px]">
             <h2 className="text-white text-3xl my-5 self-start">
               השותפים שלנו
             </h2>
@@ -67,12 +64,12 @@ export default function Home() {
         </main>
       </div>
 
-      <div className="flex flex-row flex-1 p-5 lg:w-[98vw] mb-3 rounded lg:bg-[#2d3031] justify-between items-center">
+      <div className="flex flex-row flex-1 p-5 lg:w-[98%] mb-3 rounded lg:bg-[#2d3031] justify-between items-center self-center">
         <ContactForm />
-        {!isMobile && <img src={deviceMockups} alt="" className="w-[50vw]" />}
+        {!isMobile && <img src={deviceMockups} alt="" className="max-w-[50%]" />}
       </div>
 
-      <div>
+      <div className="w-full">
         <footer>
           <Footer />
         </footer>

@@ -16,13 +16,13 @@ function AboutUs() {
       />
 
       <link rel="canonical" href="/wsdigital/aboutus" />
-      <div>
+      <div className="w-full">
         <header>
           <Header />
         </header>
       </div>
       <div>
-        <main className="lg:w-[100vw] lg:h-[100vh] px-8 lg:mt-10 flex bg-blue-50 roundedflex-col items-center my-5">
+        <main className="lg:w-full lg:h-[100vh] px-8 lg:mt-10 flex bg-blue-50 roundedflex-col items-center my-5">
           <div className="w-full h-full space-y-5 lg:space-y-0 lg:gap-20 lg:grid lg:grid-cols-10 lg:grid-rows-10">
             <TextCard
               title="יהב ויצמן"
@@ -71,7 +71,7 @@ function AboutUs() {
         </main>
       </div>
 
-      <div>
+      <div className="w-full">
         <footer>
           <Footer />
         </footer>

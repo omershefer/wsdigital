@@ -16,7 +16,7 @@ function App() {
 
   return (
     <HashRouter>
-      <div className="w-full h-full">
+      <div className="w-full lg:max-w-[40cm] overflow-x-hidden h-full">
         <ScrollToTopOnRouteChange />
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>

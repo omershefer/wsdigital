@@ -7,8 +7,8 @@ function PageNotFound() {
 
   return (
     <div className="min-w-full min-h-screen overflow-y-auto overflow-x-hidden bg-blue-50 flex flex-1 flex-col items-center font-primary">
-      <title>ויצמן-שפר דיגיטל-  עמוד לא נמצא</title>
-      <div>
+      <title>ויצמן-שפר דיגיטל- עמוד לא נמצא</title>
+      <div className="w-full">
         <header>
           <Header />
         </header>
@@ -30,7 +30,7 @@ function PageNotFound() {
         </main>
       </div>
 
-      <div>
+      <div className="w-full">
         <footer>
           <Footer />
         </footer>

@@ -11,7 +11,7 @@ function ContactPage() {
       />
 
       <link rel="canonical" href="/wsdigital/contact" />
-      <div>
+      <div className="w-full">
         <header>
           <Header />
         </header>
@@ -23,7 +23,7 @@ function ContactPage() {
           </div>
         </main>
       </div>
-      <div>
+      <div className="w-full">
         <footer>
           <Footer />
         </footer>

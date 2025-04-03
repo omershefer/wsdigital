@@ -37,7 +37,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className="flex flex-col h-[38vh] w-[100vw] bg-[#439775] py-8 px-4 font-primary">
+    <div className="flex flex-col h-[38vh] w-[100%] bg-[#439775] py-8 px-4 font-primary">
       {/* Top Section */}
       <div className="flex flex-row w-full lg:p-3 h-[20%] justify-between items-center">
         <h2 className="text-3xl">ויצמן-שפר דיגיטל.</h2>
