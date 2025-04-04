@@ -8,7 +8,6 @@ import PageNotFound from "./pages/PageNotFound";
 import AboutUs from "./pages/AboutUs";
 import AccessibilityDecleration from "./pages/AccessibilityDecleration";
 import Pricing from "./pages/Pricing";
-import Contactpage from "./pages/ContactPage";
 import WorkExamples from "./pages/WorkExamples";
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/contact" element={<Contactpage />} />
             <Route
               path="/accessibility"
               element={<AccessibilityDecleration />}

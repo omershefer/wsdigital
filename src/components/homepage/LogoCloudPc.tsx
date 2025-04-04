@@ -113,7 +113,7 @@ const LogoCloudPc = () => {
       {/* Fading overlay with gradient */}
       <div className="absolute flex justify-center items-center z-20 w-full lg:w-[120%] lg:h-[200%] bg-gradient-to-b from-[#2C3537]/0 via-transparent duration-300 to-[#2C3537]/0 backdrop-blur-md transition-opacity opacity-0 group-hover:opacity-100">
         <a
-          onClick={() => navigate("/aboutus")}
+          onClick={() => navigate("/catalog")}
           className="text-[#adadad] underline"
         >
           לצפייה בכל השותפים שלנו

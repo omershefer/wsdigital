@@ -136,24 +136,34 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="w-[98vw] mb-4 lg:w-full border border-gray-300 max-w-2xl mx-auto p-6 bg-gray-900 text-white rounded-lg shadow-lg">
+    <div
+      className="w-[98vw] mb-4 lg:w-full border border-gray-300 max-w-2xl mx-auto p-6 bg-gray-900 text-white rounded-lg shadow-lg"
+      aria-labelledby="contact-form"
+    >
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
           className="space-y-6 w-full"
           dir="rtl"
+          aria-describedby="contact-form-description"
         >
-          <h2 className="text-2xl text-center mb-6">צור קשר</h2>
-
+          <h2 className="text-2xl text-center mb-6" id="contact-form">
+            צור קשר
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>שם מלא</FormLabel>
+                  <FormLabel htmlFor="name">שם מלא</FormLabel>
                   <FormControl>
-                    <Input placeholder="השם של איש הקשר איתנו" {...field} />
+                    <Input
+                      id="name"
+                      aria-label="שם מלא"
+                      placeholder="השם של איש הקשר איתנו"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -165,9 +175,15 @@ export default function ContactForm() {
               name="phoneNumber"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>מספר טלפון</FormLabel>
+                  <FormLabel htmlFor="phoneNumber">מספר טלפון</FormLabel>
                   <FormControl>
-                    <Input type="tel" placeholder="05x-xxxxxxx" {...field} />
+                    <Input
+                      id="phoneNumber"
+                      aria-label="מספר טלפון"
+                      type="tel"
+                      placeholder="05x-xxxxxxx"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -180,9 +196,11 @@ export default function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>אימייל</FormLabel>
+                <FormLabel htmlFor="email">אימייל</FormLabel>
                 <FormControl>
                   <Input
+                    id="email"
+                    aria-label="אימייל"
                     type="email"
                     placeholder="example@gmail.com"
                     {...field}
@@ -198,9 +216,14 @@ export default function ContactForm() {
             name="subject"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>נושא</FormLabel>
+                <FormLabel htmlFor="subject">נושא</FormLabel>
                 <FormControl>
-                  <Input placeholder="אתר/דף נחיתה ל..." {...field} />
+                  <Input
+                    id="subject"
+                    aria-label="נושא"
+                    placeholder="אתר/דף נחיתה ל..."
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -212,9 +235,11 @@ export default function ContactForm() {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>הודעה</FormLabel>
+                <FormLabel htmlFor="message">הודעה</FormLabel>
                 <FormControl>
                   <Textarea
+                    id="message"
+                    aria-label="הודעה"
                     placeholder="באיזה שעות לחזור אליכם, הערות, בקשות, בירורים..."
                     className="resize-y"
                     {...field}
@@ -225,7 +250,13 @@ export default function ContactForm() {
             )}
           />
 
-          <button type="submit" className="w-full bg-white text-black rounded py-1 active:bg-black active:text-white" disabled={isSubmitting}>
+          <button
+            type="submit"
+            aria-label={isSubmitting ? "שולח את הטופס" : "שלח את הטופס"}
+            tabIndex={0}
+            className="w-full bg-white text-black rounded py-1 active:bg-black active:text-white focus:ring-2 focus:ring-white"
+            disabled={isSubmitting}
+          >
             {isSubmitting ? "שולח..." : "שלח"}
           </button>
         </form>

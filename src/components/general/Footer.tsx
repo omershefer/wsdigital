@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 export default function Footer() {
   const navigate = useNavigate();
 
-
   const items = [
     {
       id: 1,
@@ -71,7 +70,8 @@ export default function Footer() {
               ].map(({ label, onClick }) => (
                 <li key={label}>
                   <button
-                    className="text-black hover:opacity-80 active:opacity-65"
+                    tabIndex={0}
+                    className="text-black hover:opacity-80 active:opacity-65 focus:ring-2 focus:ring-white"
                     onClick={onClick}
                   >
                     <span className="underline">{label}</span>
@@ -91,7 +91,7 @@ export default function Footer() {
                   key={item.id}
                   className={`transition-all duration-300 active:opacity-75 flex flex-row items-center gap-x-1 hover:scale-130`}
                 >
-                  <a href={item.href} className="h-full w-full">
+                  <a href={item.href} tabIndex={0} className="h-full w-full focus:ring-2 focus:ring-white">
                     <img src={item.whiteIcon} alt="" className="h-3" />
                   </a>
                 </li>
