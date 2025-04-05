@@ -3,9 +3,10 @@ import Layout from "./Layout"; // import the Layout component
 import firstPicSrc from "../images/pic-of-us.png";
 import React from "react";
 
+
 function AboutUs() {
   const navigate = useNavigate();
-
+  
   return (
     <Layout
       title="ויצמן-שפר דיגיטל- עלינו"

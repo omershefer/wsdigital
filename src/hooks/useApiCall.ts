@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Generic type for the data returned by the API
 export interface ApiResponse<T> {
-  data: T | null;
+  data: any;
   loading: boolean;
   error: string | null;
   fetchData: (

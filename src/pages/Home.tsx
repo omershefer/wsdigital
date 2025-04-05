@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="flex flex-1 flex-col bg-[#2C3537] pt-3 px-3 pb-10 w-full lg:w-[98%] min-h-[50%]">
             <h2 className="text-white text-3xl">העבודות שלנו</h2>
-            <div className="flex justify-center mx-auto w-[75%]" dir="ltr">
+            <div className="flex justify-center mx-auto w-[100%]" dir="ltr">
               <Carousel />
             </div>
           </div>

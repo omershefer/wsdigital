@@ -27,7 +27,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
           }`}
         >
           {/* Image Section Skeleton */}
-          <div className="lg:w-1/2 lg:self-end lg:flex lg:flex-1 rounded-2xl" >
+          <div className="lg:w-1/2 lg:self-end lg:flex lg:flex-1 rounded-2xl">
             <div
               className={`mt-4 lg:mt-0 lg:w-[70%] ${
                 variant === "imageRight" ? "lg:ml-auto" : "lg:mr-auto"
@@ -96,20 +96,22 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         <div className="lg:md:w-[45%] lg:p-6 lg:flex lg:flex-col lg:justify-between">
           {" "}
           <div>
-            <h2 className="text-3xl mt-2 mb-1">{title}</h2>
-            <p className="text-xl mb-2">{category}</p>
-            <p className="text-lg mt-6 mb-4">{description}</p>
-            <p className="text-lg mt-6 mb-4">
-              לכניסה לאתר הקליקו על התמונה או{" "}
-              <a
-                className="text-blue-300 underline"
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                לחצו כאן
-              </a>
-            </p>
+            <div className=" text-gray-700 col-start-4 col-span-3 row-start-1 row-span-5 bg-white rounded-3xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-100">
+              <h2 className="text-3xl mt-2 mb-1 text-[#214f36] ">{title}</h2>
+              <p className="text-xl mb-2 text-[#214f36]">{category}</p>
+              <p className="text-lg mt-6 mb-4">{description}</p>
+              <p className="text-lg mt-6 mb-4">
+                לכניסה לאתר הקליקו על התמונה או{" "}
+                <a
+                  className="text-green-700/70 underline"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  לחצו כאן
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

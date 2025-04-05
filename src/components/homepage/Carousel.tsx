@@ -15,20 +15,39 @@ export default function CarouselPlugin() {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
+const reviews = [
+  {
+    name: "1",
+    url: "https://i.imgur.com/Jm1ewD7.png",
+  },
+  {
+    name: "2",
+    url: "https://i.imgur.com/wRLkGL2.png",
+  },
+  {
+    name: "3",
+    url: "https://i.imgur.com/1ayPfeR.png",
+  },
+  {
+    name: "4",
+    url: "https://i.imgur.com/vUPNxGU.png",
+  },
+];
+
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-xs"
+      className="w-full max-w-md"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {reviews.map((work, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
+              <Card className="bg-transparent shadow-none border-none">
+                <CardContent className="flex aspect-square items-center justify-center">
+                  <img src={work.url} alt="דוגמה לעבודה" />
                 </CardContent>
               </Card>
             </div>

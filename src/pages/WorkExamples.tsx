@@ -12,7 +12,7 @@ function WorkExamplesPage() {
   useEffect(() => {
     const init = async () => {
       await fetchWithParams(
-        "https://hook.eu2.make.com/7fkgnwmw6kabhh40p01wde9699lo85rn"
+        "https://hook.eu2.make.com/y8df22w0pq17wkin5x5403numl8phg81"
       );
     };
 
